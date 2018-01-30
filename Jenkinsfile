@@ -1,4 +1,5 @@
 node {
+   // https://wiki.jenkins.io/display/JENKINS/Go+Plugi n
     def root = tool name: 'Go1.9', type: 'go'
     ws("${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}/src/westest") {
         withEnv(["GOROOT=${root}", "GOPATH=${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}/", "PATH+GO=${root}/bin"]) {
