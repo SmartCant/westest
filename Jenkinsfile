@@ -22,7 +22,8 @@ node {
             sh 'go build .'
             
             stage 'Deploy'
-            // Do nothing.
+            // Do. nothing
+            // uploaden naar X of ergens neerzetten + email versturen
         }
     }
 }
